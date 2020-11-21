@@ -1,5 +1,5 @@
 INSERT INTO gods (godName, godClass, godPower, godPantheon, godAttackType, Difficulty) VALUES 
-('Achilles', 'Warrior', 1, 'Greek', 1, ''),
+('Achilles', 'Warrior', 1, 'Greek', 1, 'Average'),
 ('Agni', 'Mage', 0, 'Hindu', 0, 'Hard'),
 ('', '', 0, '', 0, ''),
 ('', '', 0, '', 0, ''),
