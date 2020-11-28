@@ -9,59 +9,46 @@ p {
 
 /* Home page */
 
-#homepage_content {
+.homepage_content {
     border: 2pt solid green;
 }
-#image_containter {
+.homepage_content #image_containter {
     border: 2pt solid yellow;
     /* margin: 10em; */
 }
-#item_box {
+.homepage_content #item_box {
     border: 2pt solid red;
     margin: 0pt;
+    cursor: pointer;
+    padding-bottom: 3em;
 }
-#homepage_content p {
+.homepage_content p {
     color: white;
     margin: 1pt;
     font-size: 10pt;
 }
-#homepage_content button {
-    background-color: #232334;
-    border: none;
-    color: white;
-    /* Padding: left/right, top/bottom */
-    /* padding: 1em 2em; */
-    margin-left: auto;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    /* margin: 4px 2px; */
-    cursor: pointer;
-    height: 250px;
-}
-#homepage_content img {
+.homepage_content img {
     width: 80%;
+}
+.homepage_content .zoom {
+    transition: 0.3s;
+}
+.homepage_content .zoom:hover {
+    /* IE 9 */
+    -ms-transform: scale(1.25);
+    /* Safari 3-8 */
+    -webkit-transform: scale(1.25);
+    transform: scale(1.25);
 }
 
 /* Footer */
 
-footer {
+.footer {
     border: 2pt solid red;
     color: white;
-}
-#con {
-    min-height: 100%;
-    border: 2pt solid yellow;
-}
-#content {
-    border: 2pt solid green;
-}
-#content p {
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
-#footer {
+    position: relative;
     bottom: 0;
-    width: 100%;
+    /* width: 100%; */
     height: 60px;
+    line-height: 60px;
 }

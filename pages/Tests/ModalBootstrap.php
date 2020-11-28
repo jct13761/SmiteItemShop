@@ -36,7 +36,6 @@ $j = 0;
             transition: 0.4s;
         }
 
-        .active,
         .accordion:hover {
             background-color: #ccc;
         }
@@ -46,6 +45,24 @@ $j = 0;
             display: none;
             background-color: white;
             overflow: hidden;
+        }
+
+        /* .zoom {
+            padding: 50px;
+            background-color: green;
+            transition: transform .2s;
+            width: 200px;
+            height: 200px;
+            margin: 0 auto;
+        } */
+
+        .zoom:hover {
+            /* IE 9 */
+            -ms-transform: scale(1.5);
+            /* Safari 3-8 */
+            -webkit-transform: scale(1.5);
+            transform: scale(1.1);
+            border: 2pt solid black;
         }
     </style>
 </head>
@@ -67,21 +84,22 @@ $j = 0;
                     <div class="row" style="border: 2pt solid blue">
                     <?php } ?>
                     <div class="col-md-2 text-center" id="item_box" style="border: 2pt solid red">
-                        <button class="accordion" data-toggle="modal" data-target="#demo<?php echo $result['itemID'] ?>" id="image_button">
+                        <button class="accordion zoom" data-toggle="modal" data-target="#demo<?php echo $result['itemID'] ?>" id="image_button">
                             Section <?php echo $i; ?>
                         </button>
+
                         <!-- The Modal -->
-                        <div class="modal fade" id="demo<?php echo $result['itemID']; $i++ ?>">
+                        <div class="modal fade" id="demo<?php echo $result['itemID'];
+                                                        $i++ ?>">
                             <div class="modal-dialog modal-dialog-centered">
                                 <div class="modal-content">
-
                                     <!-- Modal Header -->
                                     <div class="modal-header">
                                         <h4 class="modal-title">Modal Heading</h4>
                                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                                     </div>
-
-                                    <div  class="modal-body">
+                                    <!-- Modal body -->
+                                    <div class="modal-body">
                                         <p>Lorem ipsum dolor text....
                                             <?php echo "<br>";
                                             echo $result['itemName'];
@@ -89,12 +107,10 @@ $j = 0;
                                             echo $result['itemID']; ?>
                                         </p>
                                     </div>
-
                                     <!-- Modal footer -->
                                     <div class="modal-footer">
                                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                                     </div>
-
                                 </div>
                             </div>
                         </div>
@@ -104,27 +120,8 @@ $j = 0;
                     </div>
             <?php }
                 endforeach; ?>
-
         </div>
     </div>
-
-    <!-- <script>
-        var acc = document.getElementsByClassName("accordion");
-        var i;
-
-        for (i = 0; i < acc.length; i++) {
-            acc[i].addEventListener("click", function() {
-                this.classList.toggle("active");
-                var panel = this.nextElementSibling;
-                if (panel.style.display === "block") {
-                    panel.style.display = "none";
-                } else {
-                    panel.style.display = "block";
-                }
-            });
-        }
-    </script> -->
-
 </body>
 
 </html>

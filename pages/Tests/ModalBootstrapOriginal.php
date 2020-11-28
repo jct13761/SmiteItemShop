@@ -17,9 +17,9 @@
         <h2>Centered Modal Example</h2>
         <p>Center the modal vertically and horizontally within the page, with the .modal-dialog-centered class.</p>
         <!-- Button to Open the Modal -->
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+        <div class="btn btn-primary" data-toggle="modal" data-target="#myModal">
             Open modal
-        </button>
+        </div>
 
         <!-- The Modal -->
         <div class="modal fade" id="myModal">

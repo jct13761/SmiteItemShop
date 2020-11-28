@@ -6,6 +6,10 @@ $term = "health";
 $query = "SELECT * FROM items WHERE itemKeywords LIKE '%$term%'";
 $results = $db->prepare($query);
 $results->execute();
+
+// Temp vars for looping over the array
+$i = 0;
+$j = 0;
 ?>
 
 <!DOCTYPE html>
@@ -25,157 +29,68 @@ $results->execute();
 
 <body>
     <?php include('header.php'); ?>
-    <div class="container" id="homepage_content">
+    <div class="container homepage_content" >
         <div class="container-fluid" id="image_containter">
             <!-- <img src="../ItemImages/emperors-armor.jpg"> -->
-            <?php foreach ($results as $result) : ?>
-                <div class="col-md-2 text-center" id="item_box">
-                    <?php $id = $result['itemID'] ?>
-                    <button data-toggle="collapse" data-target="#demo" id="image_button">
-                        <!-- <img src="../ItemImages/emperors-armor.jpg"> -->
+
+            <?php foreach ($results as $result) :
+                // if it is not the 6th item, add it to the row div
+                if ($i % 6 == 0) { ?>
+                    <div class="row" style="border: 2pt solid blue">
+                    <?php } ?>
+                    <!-- The button div to hold the image and text -->
+                    <div class="col-md-2 text-center zoom" id="item_box" style="border: 2pt solid red" data-toggle="modal" data-target="#demo<?php echo $result['itemID'] ?>">
+                        <!-- the button with the image and name of the item -->
                         <img src="../<?php echo $result['itemImage']; ?>">
                         <p><?php echo $result['itemName']; ?></p>
-                    </button>
-                    <div id="demo" class="collapse">
-                        Lorem ipsum dolor text....
                     </div>
-                </div>
-            <?php endforeach; ?>
+
+                    <!-- The Modal window -->
+                    <div class="modal fade" id="demo<?php echo $result['itemID']; ?>">
+                        <?php $i++; ?>
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Modal Heading</h4>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+                                <!-- Modal Body -->
+                                <div class="modal-body">
+                                    <p>Lorem ipsum dolor text....
+                                        <?php echo "<br>";
+                                        echo $result['itemName'];
+                                        echo "<br>";
+                                        echo $result['itemID']; ?>
+                                    </p>
+                                </div>
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <?php if ($i % 6 == 0 && $i != 0) { ?>
+                    </div>
+            <?php }
+                endforeach; ?>
 
 
 
 
 
 
-            <!-- REPEAT LOOP -->
+
             <?php $query = "SELECT * FROM items WHERE itemKeywords LIKE '%$term%'";
             $results = $db->prepare($query);
-            $results->execute();
-            foreach ($results as $result) : ?>
-                <div class="col-md-2 text-center" id="item_box">
-                    <?php $id = $result['itemID'] ?>
-                    <button data-toggle="collapse" data-target="#demo" id="image_button">
-                        <!-- <img src="../ItemImages/emperors-armor.jpg"> -->
-                        <img src="../<?php echo $result['itemImage']; ?>">
-                        <p><?php echo $result['itemName']; ?></p>
-                    </button>
-                    <div id="demo" class="collapse">
-                        Lorem ipsum dolor text....
-                    </div>
-                </div>
-            <?php endforeach; ?>
-            <?php $query = "SELECT * FROM items WHERE itemKeywords LIKE '%$term%'";
-            $results = $db->prepare($query);
-            $results->execute();
-            foreach ($results as $result) : ?>
-                <div class="col-md-2 text-center" id="item_box">
-                    <?php $id = $result['itemID'] ?>
-                    <button data-toggle="collapse" data-target="#demo" id="image_button">
-                        <!-- <img src="../ItemImages/emperors-armor.jpg"> -->
-                        <img src="../<?php echo $result['itemImage']; ?>">
-                        <p><?php echo $result['itemName']; ?></p>
-                    </button>
-                    <div id="demo" class="collapse">
-                        Lorem ipsum dolor text....
-                    </div>
-                </div>
-            <?php endforeach; ?>
-            <?php $query = "SELECT * FROM items WHERE itemKeywords LIKE '%$term%'";
-            $results = $db->prepare($query);
-            $results->execute();
-            foreach ($results as $result) : ?>
-                <div class="col-md-2 text-center" id="item_box">
-                    <?php $id = $result['itemID'] ?>
-                    <button data-toggle="collapse" data-target="#demo" id="image_button">
-                        <!-- <img src="../ItemImages/emperors-armor.jpg"> -->
-                        <img src="../<?php echo $result['itemImage']; ?>">
-                        <p><?php echo $result['itemName']; ?></p>
-                    </button>
-                    <div id="demo" class="collapse">
-                        Lorem ipsum dolor text....
-                    </div>
-                </div>
-            <?php endforeach; ?>
-            <?php $query = "SELECT * FROM items WHERE itemKeywords LIKE '%$term%'";
-            $results = $db->prepare($query);
-            $results->execute();
-            foreach ($results as $result) : ?>
-                <div class="col-md-2 text-center" id="item_box">
-                    <?php $id = $result['itemID'] ?>
-                    <button data-toggle="collapse" data-target="#demo" id="image_button">
-                        <!-- <img src="../ItemImages/emperors-armor.jpg"> -->
-                        <img src="../<?php echo $result['itemImage']; ?>">
-                        <p><?php echo $result['itemName']; ?></p>
-                    </button>
-                    <div id="demo" class="collapse">
-                        Lorem ipsum dolor text....
-                    </div>
-                </div>
-            <?php endforeach; ?>
-            <?php $query = "SELECT * FROM items WHERE itemKeywords LIKE '%$term%'";
-            $results = $db->prepare($query);
-            $results->execute();
-            foreach ($results as $result) : ?>
-                <div class="col-md-2 text-center" id="item_box">
-                    <?php $id = $result['itemID'] ?>
-                    <button data-toggle="collapse" data-target="#demo" id="image_button">
-                        <!-- <img src="../ItemImages/emperors-armor.jpg"> -->
-                        <img src="../<?php echo $result['itemImage']; ?>">
-                        <p><?php echo $result['itemName']; ?></p>
-                    </button>
-                    <div id="demo" class="collapse">
-                        Lorem ipsum dolor text....
-                    </div>
-                </div>
-            <?php endforeach; ?>
-            <?php $query = "SELECT * FROM items WHERE itemKeywords LIKE '%$term%'";
-            $results = $db->prepare($query);
-            $results->execute();
-            foreach ($results as $result) : ?>
-                <div class="col-md-2 text-center" id="item_box">
-                    <?php $id = $result['itemID'] ?>
-                    <button data-toggle="collapse" data-target="#demo" id="image_button">
-                        <!-- <img src="../ItemImages/emperors-armor.jpg"> -->
-                        <img src="../<?php echo $result['itemImage']; ?>">
-                        <p><?php echo $result['itemName']; ?></p>
-                    </button>
-                    <div id="demo" class="collapse">
-                        Lorem ipsum dolor text....
-                    </div>
-                </div>
-            <?php endforeach; ?>
-            <?php $query = "SELECT * FROM items WHERE itemKeywords LIKE '%$term%'";
-            $results = $db->prepare($query);
-            $results->execute();
-            foreach ($results as $result) : ?>
-                <div class="col-md-2 text-center" id="item_box">
-                    <?php $id = $result['itemID'] ?>
-                    <button data-toggle="collapse" data-target="#demo" id="image_button">
-                        <!-- <img src="../ItemImages/emperors-armor.jpg"> -->
-                        <img src="../<?php echo $result['itemImage']; ?>">
-                        <p><?php echo $result['itemName']; ?></p>
-                    </button>
-                    <div id="demo" class="collapse">
-                        Lorem ipsum dolor text....
-                    </div>
-                </div>
-            <?php endforeach; ?>
-            <?php $query = "SELECT * FROM items WHERE itemKeywords LIKE '%$term%'";
-            $results = $db->prepare($query);
-            $results->execute();
-            foreach ($results as $result) : ?>
-                <div class="col-md-2 text-center" id="item_box">
-                    <?php $id = $result['itemID'] ?>
-                    <button data-toggle="collapse" data-target="#demo" id="image_button">
-                        <!-- <img src="../ItemImages/emperors-armor.jpg"> -->
-                        <img src="../<?php echo $result['itemImage']; ?>">
-                        <p><?php echo $result['itemName']; ?></p>
-                    </button>
-                    <div id="demo" class="collapse">
-                        Lorem ipsum dolor text....
-                    </div>
-                </div>
-            <?php endforeach; ?>
+            $results->execute();?>
+          
+
+
+
 
 
 
