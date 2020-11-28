@@ -1,5 +1,67 @@
 body {
-    /* background: #1f1f42; */
-    /* background: #18182f; */
+    /* DONT USE: background: #1f1f42; */
+    /* DONT USE: background: #18182f; */
     background: #232334;
+}
+p {
+    color: white;
+}
+
+/* Home page */
+
+#homepage_content {
+    border: 2pt solid green;
+}
+#image_containter {
+    border: 2pt solid yellow;
+    /* margin: 10em; */
+}
+#item_box {
+    border: 2pt solid red;
+    margin: 2pt;
+}
+#homepage_content p {
+    color: white;
+    margin: 1pt;
+    font-size: 10pt;
+}
+#homepage_content button {
+    background-color: #232334;
+    border: none;
+    color: white;
+    /* Padding: left/right, top/bottom */
+    /* padding: 1em 2em; */
+    margin-left: auto;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    /* margin: 4px 2px; */
+    cursor: pointer;
+    height: 250px;
+}
+#homepage_content img {
+    width: 80%;
+}
+
+/* Footer */
+
+footer {
+    border: 2pt solid red;
+    color: white;
+}
+#con {
+    min-height: 100%;
+    border: 2pt solid yellow;
+}
+#content {
+    border: 2pt solid green;
+}
+#content p {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+#footer {
+    bottom: 0;
+    width: 100%;
+    height: 60px;
 }
