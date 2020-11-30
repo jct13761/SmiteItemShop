@@ -1,7 +1,10 @@
 body {
     /* DONT USE: background: #1f1f42; */
     /* DONT USE: background: #18182f; */
-    background: #232334;
+    /* MY DEEP BLUE: background: #232334; */
+    /* Smite Deep blue: background: #05111e */
+    /* Smite lighter blue: background: #071325 */
+    background: #191919;
 }
 p {
     color: white;
@@ -9,15 +12,11 @@ p {
 
 /* Home page */
 
-.homepage_content {
-    border: 2pt solid green;
-}
+.homepage_content {}
 .homepage_content #image_containter {
-    border: 2pt solid yellow;
-    /* margin: 10em; */
+    margin-bottom: 5em;
 }
 .homepage_content #item_box {
-    border: 2pt solid red;
     margin: 0pt;
     cursor: pointer;
     padding-bottom: 3em;
@@ -44,11 +43,29 @@ p {
 /* Footer */
 
 .footer {
-    border: 2pt solid red;
     color: white;
     position: relative;
     bottom: 0;
-    /* width: 100%; */
+    width: 100%;
     height: 60px;
     line-height: 60px;
+    font-size: 8pt;
+}
+
+/* Tester Borders */
+
+.footer {
+    border: 2pt solid red;
+}
+.homepage_content {
+    border: 2pt solid green;
+}
+.homepage_content #image_containter {
+    border: 2pt solid yellow;
+}
+.homepage_content #row {
+    border: 2pt solid blue;
+}
+.homepage_content #item_box {
+    border: 2pt solid red;
 }

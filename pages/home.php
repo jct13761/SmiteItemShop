@@ -29,17 +29,17 @@ $j = 0;
 
 <body>
     <?php include('header.php'); ?>
-    <div class="container homepage_content" >
+    <div class="container homepage_content">
         <div class="container-fluid" id="image_containter">
             <!-- <img src="../ItemImages/emperors-armor.jpg"> -->
 
             <?php foreach ($results as $result) :
                 // if it is not the 6th item, add it to the row div
                 if ($i % 6 == 0) { ?>
-                    <div class="row" style="border: 2pt solid blue">
+                    <div class="row" id="row">
                     <?php } ?>
                     <!-- The button div to hold the image and text -->
-                    <div class="col-md-2 text-center zoom" id="item_box" style="border: 2pt solid red" data-toggle="modal" data-target="#demo<?php echo $result['itemID'] ?>">
+                    <div class="col-xs-2 text-center zoom" id="item_box" data-toggle="modal" data-target="#demo<?php echo $result['itemID'] ?>">
                         <!-- the button with the image and name of the item -->
                         <img src="../<?php echo $result['itemImage']; ?>">
                         <p><?php echo $result['itemName']; ?></p>
@@ -68,7 +68,6 @@ $j = 0;
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                                 </div>
-
                             </div>
                         </div>
                     </div>
@@ -86,8 +85,8 @@ $j = 0;
 
             <?php $query = "SELECT * FROM items WHERE itemKeywords LIKE '%$term%'";
             $results = $db->prepare($query);
-            $results->execute();?>
-          
+            $results->execute(); ?>
+
 
 
 
@@ -98,14 +97,6 @@ $j = 0;
         </div>
     </div>
 
-    <div class="container">
-        <div class="row">
-
-            <div class="col-md-6" style="background-color:pink;">
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto.
-            </div>
-        </div>
-    </div>
     <?php include('footer.php'); ?>
 </body>
 
