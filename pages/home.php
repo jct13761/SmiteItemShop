@@ -29,6 +29,7 @@ $j = 0;
 
 <body>
     <?php include('header.php'); ?>
+    <?php include('inputs.php'); ?>
     <div class="container homepage_content">
         <div class="container-fluid" id="image_containter">
             <!-- <img src="../ItemImages/emperors-armor.jpg"> -->
@@ -78,21 +79,9 @@ $j = 0;
                 endforeach; ?>
 
 
-
-
-
-
-
             <?php $query = "SELECT * FROM items WHERE itemKeywords LIKE '%$term%'";
             $results = $db->prepare($query);
             $results->execute(); ?>
-
-
-
-
-
-
-
 
         </div>
     </div>
