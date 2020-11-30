@@ -1,3 +1,5 @@
+/* Global variables */
+
 body {
     /* DONT USE: background: #1f1f42; */
     /* DONT USE: background: #18182f; */
@@ -10,9 +12,14 @@ p {
     color: white;
 }
 
+/* Header */
+
+.header img {
+    width: 100%;
+}
+
 /* Home page */
 
-.homepage_content {}
 .homepage_content #image_containter {
     margin-bottom: 5em;
 }
@@ -27,7 +34,7 @@ p {
     font-size: 10pt;
 }
 .homepage_content img {
-    width: 80%;
+    width: 60%;
 }
 .homepage_content .zoom {
     transition: 0.3s;
@@ -54,6 +61,9 @@ p {
 
 /* Tester Borders */
 
+.header {
+    border: 2pt solid red;
+}
 .footer {
     border: 2pt solid red;
 }
