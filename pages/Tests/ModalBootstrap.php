@@ -20,8 +20,8 @@ $j = 0;
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <style>
         .accordion {
             background-color: #eee;
@@ -47,15 +47,6 @@ $j = 0;
             overflow: hidden;
         }
 
-        /* .zoom {
-            padding: 50px;
-            background-color: green;
-            transition: transform .2s;
-            width: 200px;
-            height: 200px;
-            margin: 0 auto;
-        } */
-
         .zoom:hover {
             /* IE 9 */
             -ms-transform: scale(1.5);
@@ -69,12 +60,30 @@ $j = 0;
 
 <body>
 
+
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+        <a class="navbar-brand" href="#">Logo</a>
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link 1</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link 2</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link 3</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+
     <div class="container" id="homepage_content" style="border: 2pt solid green">
         <div class="container-fluid" id="image_containter" style="border: 2pt solid yellow">
             <h2>Accordion</h2>
-
-
-
 
             <!-- <div class="input-group mb-3"> -->
 
