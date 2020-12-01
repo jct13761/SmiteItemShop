@@ -3,7 +3,7 @@
     <a class="navbar-brand" href="home.php">
         <img src="../images/Logo.png" alt="logo" style="width:40px;">
     </a>
-    <!-- <div class="container"> -->
+    <div class="container">
 
     <ul class="nav navbar-nav">
         <li class="nav-item active">
@@ -19,5 +19,5 @@
                 <a class="nav-link disabled" href="#">Disabled</a>
             </li> -->
     </ul>
-    <!-- </div> -->
+    </div>
 </nav>

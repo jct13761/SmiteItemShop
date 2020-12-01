@@ -25,11 +25,22 @@ p {
     margin-bottom: 50pt;
     color: white;
 }
-.input_group h4 {
+.input_group h5 {
     color: #ada176;
+    /* font-weight: bold; */
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }
-.input_group input {
+.input_group #checkbox {
     margin-right: 1em;
+}
+#search {
+    background-color: #434343;
+    border: 1px solid #ada176;
+    display: block;
+    font-weight: 100;
+    margin: 0 auto;
 }
 .input_group label {
     font-size: 10pt;
@@ -83,18 +94,27 @@ p {
 
 /* Tester Borders */
 
-.footer {
+.input_group .row {
+    border: 2pt solid blue;
+}
+.input_group .col-sm-8 {
+    border: 2pt dashed yellow;
+}
+.input_group .checkbox_container {
     border: 2pt solid red;
 }
 .homepage_content {
     border: 2pt solid green;
 }
 .homepage_content #image_containter {
-    border: 2pt solid yellow;
+    border: 2pt dashed yellow;
 }
 .homepage_content #row {
     border: 2pt solid blue;
 }
 .homepage_content #item_box {
+    border: 2pt solid red;
+}
+.footer {
     border: 2pt solid red;
 }
