@@ -35,16 +35,37 @@ p {
 .input_group #checkbox {
     margin-right: 1em;
 }
-#search {
+.image-container {
+    border: 2pt solid red;
+    position: relative;
+}
+#search-bar {
     background-color: #434343;
     border: 1px solid #ada176;
     display: block;
     font-weight: 100;
     margin: 0 auto;
 }
-.input_group label {
+
+/* .image-container #search-image {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+} */
+
+.checkbox_container {
+    width: 20%;
+}
+.checkbox_container label {
     font-size: 10pt;
     font-weight: normal;
+    float: left;
+}
+.checkbox_container input {
+    margin-right: 5px;
+}
+.clear {
+    clear: both;
 }
 
 /* Home page */
@@ -97,11 +118,11 @@ p {
 .input_group .row {
     border: 2pt solid blue;
 }
-.input_group .col-sm-8 {
+.input_group .col-sm-10 {
     border: 2pt dashed yellow;
 }
 .input_group .checkbox_container {
-    border: 2pt solid red;
+    /* border: 2pt solid red; */
 }
 .homepage_content {
     border: 2pt solid green;
