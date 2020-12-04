@@ -7,6 +7,8 @@ body {
     /* Smite Deep blue: background: #05111e */
     /* Smite lighter blue: background: #071325 */
     background: #191919;
+    font-size: 10pt;
+    font-family: sans-serif;
 }
 p {
     color: white;
@@ -25,18 +27,7 @@ p {
     margin-bottom: 50pt;
     color: white;
 }
-.input_group h5 {
-    color: #ada176;
-    /* font-weight: bold; */
-    font-size: 1.6rem;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-}
-.input_group #checkbox {
-    margin-right: 1em;
-}
 .image-container {
-    border: 2pt solid red;
     position: relative;
 }
 #search-bar {
@@ -53,16 +44,32 @@ p {
     left: 0px;
 } */
 
+.input_group .checkbox_row h5 {
+    color: #ada176;
+    /* font-weight: bold; */
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.checkbox_box {
+    padding: 0em 0em;
+}
+.checkbox_col {
+    width: fit-content;
+    min-width: 115px;
+    margin: 0px 9px;
+}
 .checkbox_container {
-    width: 20%;
+    width: fit-content;
+    margin: auto;
 }
 .checkbox_container label {
-    font-size: 10pt;
     font-weight: normal;
     float: left;
+    font-size: 10pt;
 }
 .checkbox_container input {
-    margin-right: 5px;
+    margin-right: 1em;
 }
 .clear {
     clear: both;
@@ -81,7 +88,6 @@ p {
 .homepage_content p {
     color: white;
     margin: 1pt;
-    font-size: 10pt;
 }
 .homepage_content img {
     width: 60%;
@@ -118,11 +124,20 @@ p {
 .input_group .row {
     border: 2pt solid blue;
 }
-.input_group .col-sm-10 {
+.input_group {
+    border: 2pt solid green;
+}
+.checkbox_box {
     border: 2pt dashed yellow;
 }
+.input_group .image-container {
+    border: 2pt solid red;
+}
 .input_group .checkbox_container {
-    /* border: 2pt solid red; */
+    border: 2pt solid red;
+}
+.input_group .checkbox_col {
+    border: 2pt dotted white;
 }
 .homepage_content {
     border: 2pt solid green;
