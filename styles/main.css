@@ -31,11 +31,21 @@ p {
     position: relative;
 }
 #search-bar {
+    color: white;
     background-color: #434343;
-    border: 1px solid #ada176;
+    border: 1px solid burlywood;
+    /* border: 1px solid #ada176; */
     display: block;
     font-weight: 100;
     margin: 0 auto;
+}
+.search_container {
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+    padding: 20px;
 }
 
 /* .search_container #search-image {
@@ -61,7 +71,7 @@ p {
     margin: auto;
 }
 .checkbox_container h5 {
-    color: #ada176;
+    color: burlywood;
     /* font-weight: bold; */
     font-size: 1.6rem;
     letter-spacing: 1px;
@@ -77,6 +87,15 @@ p {
 }
 .clear {
     clear: both;
+}
+.input_buttons {
+    margin: 10px;
+}
+.input_buttons .center {
+    width: fit-content;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Home page */
@@ -110,6 +129,12 @@ p {
     border: 1pt solid white;
 }
 
+/* Modal */
+
+.modal-content {
+    background: #434343;
+}
+
 /* Footer */
 
 .footer {
@@ -128,7 +153,8 @@ p {
 
 /* Tester Borders */
 
-.input_group .row {
+
+/* .input_group .row {
     border: 2pt solid blue;
 }
 .input_group {
@@ -137,15 +163,13 @@ p {
 .checkbox_box {
     border: 2pt dashed orange;
 }
-.search_container {
-    border: 2pt solid red;
-}
 .input_group .checkbox_container {
     border: 2pt solid red;
 }
 .input_group .checkbox_col {
     border: 2pt dotted white;
-}
+} */
+
 .homepage_content {
     border: 2pt solid green;
 }

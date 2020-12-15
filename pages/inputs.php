@@ -1,42 +1,15 @@
 <div class="container input_group">
 
     <!-- Search bar and reset button -->
-    <div class="conainer search_row" style="border: 2pt solid yellow;">
-        <!-- Search button -->
+    <div class="conainer search_row">
+        <!-- Search bar -->
         <div class="search_container">
             <input type="search" class="form-control" id="search-bar" placeholder="Search Items...">
-            <button type="submit">
-                <img id="search-image" src="../images/search.svg">
-            </button>
-            <!-- <a href="home.php"><b>Products</b><img id="search-image" src="../images/search.svg"></a> -->
-            <!-- Reset filter Link -->
-            <a href="?">Reset Filters</a>
+            <!-- <a href="?">Reset Filters</a> -->
         </div>
-        <form>
-            <div class="input-group" style="border: 2pt solid red; width: 500px">
-                <input type="text" class="form-control" id="search-bar" placeholder="Search Items...">
-                <div class="input-group-append">
-                    <button class="btn" type="submit">
-                        <img id="search-image" src="../images/search.svg">
-                    </button>
-                </div>
-            </div>
-        </form>
-
-
-        <div class="input-group mb-3">
-            <input type="text" class="form-control" placeholder="Something clever..">
-            <div class="input-group-append">
-                <button class="btn btn-primary" type="button">OK</button>
-                <button class="btn btn-danger" type="button">Cancel</button>
-            </div>
-        </div>
-
     </div>
 
-
     <!-- Checkboxes row -->
-    <!-- <div class="row text-center checkbox_row"> -->
     <div class="container-fluid checkbox_box">
 
         <!-- Tiers -->
@@ -302,5 +275,16 @@
             </div>
         </div>
     </div>
+
+    <!-- Search and Reset Filter Buttons -->
+    <div class="container-fluid input_buttons">
+        <form class="center">
+            <button class="btn btn-primary" type="submit" formaction="Tests/Tooltip.php">
+                <img id="search-image" src="../images/search.svg">
+            </button>
+            <button class="btn btn-danger" type="submit" formaction="home.php">Reset Filters</button>
+        </form>
+    </div>
+
     <!-- </div> -->
 </div>
