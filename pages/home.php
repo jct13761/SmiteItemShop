@@ -2,7 +2,7 @@
 include('database.php');
 
 //TESTER search query
-$term = "health";
+$term = ",";
 $query = "SELECT * FROM items WHERE itemKeywords LIKE '%$term%'";
 $results = $db->prepare($query);
 $results->execute();
