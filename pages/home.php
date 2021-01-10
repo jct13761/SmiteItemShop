@@ -1,5 +1,6 @@
 <?php
 include('database.php');
+include('ItemVarNames.php');
 
 //TESTER search query
 $term = ",";
@@ -59,11 +60,21 @@ $j = 0;
                                 </div>
                                 <!-- Modal Body -->
                                 <div class="modal-body">
-                                    <p>Lorem ipsum dolor text....
-                                        <?php echo "<br>";
+                                    <p> <?php echo "<br>";
                                         echo $result['itemName'];
                                         echo "<br>";
-                                        echo $result['itemID']; ?>
+                                        echo "Item id ==" . $result['itemID'] . "<br>";
+                                        if ($result['itemPassive'] != "£") {
+                                            echo $result['itemPassive'];
+                                        }
+                                        if ($result['itemPower'] != NULL) {
+                                            echo "<br>" . $result['itemPower'];
+                                            if ($result['itemPowerType'] == 1) {
+                                                echo $phys . $pow;
+                                            } else {
+                                                echo $mag . $pow;
+                                            }
+                                        } ?>
                                     </p>
                                 </div>
                                 <!-- Modal footer -->
