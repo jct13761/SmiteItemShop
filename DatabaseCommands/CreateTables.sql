@@ -213,6 +213,15 @@ INSERT INTO `items`(`itemName`, `itemIndividualPrice`, `itemTotalPrice`, `itemTi
 
 
 
+("Breastplate", 600, 600, 1, 13, "£", 'ItemImages/breastplate.jpg', 'physProt, ', 0, NULL, NULL, NULL, NULL, NULL, NULL, 20, NULL, NULL, NULL, null, NULL, NULL, NULL, NULL, NULL),
+("Silver Breastplate", 450, 1050, 2, 13, "£", 'ItemImages/silver-breastplate.jpg', 'physProt, mana, mp5, ', 0, NULL, NULL, NULL, NULL, NULL, NULL, 35, NULL, NULL, NULL, null, NULL, NULL, 200, 10, NULL),
+("Hide of the Nemean Lion", 1150, 2200, 3, 13, "PASSIVE - Every 15 seconds you gain a block stack if you have at least 120 total Protections from items, preventing the next Basic Attack from damaging you. For each additional 120 total Protections from items the max. stacks increases, up to a cap of 3.", 'ItemImages/hide-of-the-nemean-lion.jpg', 'physProt, mana, mp5, ', 0, NULL, NULL, NULL, NULL, NULL, NULL, 75, NULL, NULL, NULL, null, NULL, NULL, 200, 20, NULL),
+("Breastplate of Valor", 1250, 2300, 3, 13, "£", 'ItemImages/breastplate-of-valor.jpg', 'physProt, mana, mp5, cdr', 0, NULL, NULL, NULL, NULL, NULL, NULL, 65, NULL, NULL, NULL, null, NULL, 20, 300, 10, NULL),
+("Spectral Armor", 1050, 2100, 3, 13, "PASSIVE - Critical Strikes only deal 50% bonus damage to you instead of 100%.", 'ItemImages/spectral-armor.jpg', 'physProt, mana, mp5, hlth, ', 0, NULL, NULL, NULL, NULL, NULL, NULL, 65, NULL, 200, NULL, null, NULL, NULL, 300, 10, NULL),
+("Contagion", 1000, 2050, 3, 13, "AURA - Enemy gods within 55 units have their healing reduced by 25%. This does not stack with similar Auras.", 'ItemImages/contagion.jpg', 'physProt, mana, mp5, hlth, antiHeal,', 0, NULL, NULL, NULL, NULL, NULL, NULL, 60, NULL, 150, NULL, null, NULL, NULL, 250, 15, NULL),
+
+
+
 ("", , , 3, , "£", 'ItemImages/', '', 1, NULL, NULL, NULL, NULL, NULL, NULL, null, NULL, NULL, NULL, null, NULL, NULL, NULL, NULL, NULL),
 ("", , , 3, , "£", 'ItemImages/', '', 1, NULL, NULL, NULL, NULL, NULL, NULL, null, NULL, NULL, NULL, null, NULL, NULL, NULL, NULL, NULL),
 ("", , , 3, , "£", 'ItemImages/', '', 1, NULL, NULL, NULL, NULL, NULL, NULL, null, NULL, NULL, NULL, null, NULL, NULL, NULL, NULL, NULL),
