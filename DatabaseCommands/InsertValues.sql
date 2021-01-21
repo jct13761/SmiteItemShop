@@ -10,7 +10,7 @@ CREATE TABLE items (
     itemPassive VARCHAR(255) NOT NULL,
     itemImage VARCHAR(255) NOT NULL, 
     itemKeywords VARCHAR(255) NOT NULL,
-    itemPowerType BOOLEAN,
+    itemPowerType INT(1) NOT NULL,
     itemPower INT(5),
     itemAttackSpeed INT(5),
     itemLifeSteal INT(5),
