@@ -119,8 +119,8 @@ INSERT INTO gods (godName, godClass, godPower, godPantheon, godAttackType, Diffi
 -- INSERT INTO items (itemName, itemIndividualPrice, itemTotalPrice, itemTier, itemTree, itemPassive, itemImage, itemKeywords, itemPowerType, itemPower, itemAttackSpeed, itemLifeSteal, itemPercentPen, itemFlatPen, itemCritChance, itemPhysProt, itemMagProt, itemHealth, itemHP5, itemccr, itemMoveSpeed, itemcdr, itemMana, itemMP5, itemOther) VALUES
 INSERT INTO `items`(`itemName`, `itemIndividualPrice`, `itemTotalPrice`, `itemTier`, `itemTree`, `itemPassive`, `itemImage`, `itemKeywords`, `itemPowerType`, `itemPower`, `itemAttackSpeed`, `itemLifeSteal`, `itemPercentPen`, `itemFlatPen`, `itemCritChance`, `itemPhysProt`, `itemMagProt`, `itemHealth`, `itemHP5`, `itemccr`, `itemMoveSpeed`, `itemcdr`, `itemMana`, `itemMP5`, `itemOther`) VALUES 
 
-('Iron Mail', 650, 650, 1, 1, '£', 'ItemImages/iron-mail.jpg', 'hlth physProt', 0, NULL, NULL, NULL, NULL, NULL, NULL, 10, NULL, 75, NULL, null, NULL, NULL, NULL, NULL, NULL),
-('Steel Mail', 750, 1400, 2, 1, '£', 'ItemImages/steel-mail.jpg', 'hlth physProt', 0, NULL, NULL, NULL, NULL, NULL, NULL, 20, NULL, 200, NULL, null, NULL, NULL, NULL, NULL, NULL),
+('Iron Mail', 650, 650, 1, 1, '£', 'ItemImages/iron-mail.jpg', 'hlth, physProt', 0, NULL, NULL, NULL, NULL, NULL, NULL, 10, NULL, 75, NULL, null, NULL, NULL, NULL, NULL, NULL),
+('Steel Mail', 750, 1400, 2, 1, '£', 'ItemImages/steel-mail.jpg', 'hlth, physProt', 0, NULL, NULL, NULL, NULL, NULL, NULL, 20, NULL, 200, NULL, null, NULL, NULL, NULL, NULL, NULL),
 ('Sovereignty', 700, 2100, 3, 1, 'AURA - Allied gods within 70 units have their Physical Protections increased by 15 and their HP5 increased by 35.', 'ItemImages/sovereignty.jpg', 'hlth physProt, aura', 0, NULL, NULL, NULL, NULL, NULL, NULL, 45, NULL, 250, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
 ('Mystical Mail', 950, 2350, 3, 1, 'AURA - ALL enemies within 25 units are dealt 40 Magical Damage per second.', 'ItemImages/mystical-mail.jpg', 'hlth physProt, aura', 0, NULL, NULL, NULL, NULL, NULL, NULL, 40, NULL, 200, NULL, 20, NULL, NULL, NULL, NULL, NULL),
 ('Midgardian Mail', 900, 2300, 3, 1, 'PASSIVE - Enemies that successfully land a basic attack on you have their Movement Speed and Attack Speed reduced by 8% for 2 seconds. This effect can stack up to 3 times and can stack with other item slow effects.', 'ItemImages/midgardian-mail.jpg', 'hlth physProt, attSpd Debuff, slow,', 1, NULL, NULL, NULL, NULL, NULL, NULL, 40, NULL, 300, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
@@ -140,7 +140,7 @@ INSERT INTO `items`(`itemName`, `itemIndividualPrice`, `itemTotalPrice`, `itemTi
 ("Bancroft's Talon", 1100, 2500, 3, 3, 'PASSIVE - You gain additional Magical Power and Lifesteal scaled from missing Health. This caps at 100 power and 20% Lifesteal at 25% Health.', 'ItemImages/bancrofts-talon.jpg', 'magPow, magLs, mana', 2, 100, NULL, 15, NULL, NULL, NULL, null, NULL, NULL, NULL, null, NULL, NULL, 150, NULL, NULL),
 ("Typhon's Fang", 1400, 2800, 3, 3, 'PASSIVE - Your Healing obtained from Magical Lifesteal is increased by 30%. Your Magical Power is increased by twice the amount of Magical Lifesteal you have.', 'ItemImages/typhons-fang.jpg', 'magPow, magLs, mana, magPenPerc, healBuff', 2, 70, NULL, 15, 10, NULL, NULL, null, NULL, NULL, NULL, null, NULL, NULL, 200, NULL, NULL),
 
-('Mace', 650, 650, 1, 4, '£', 'ItemImages/mace.jpg', 'physPow', 1, 15, NULL, NULL, NULL, NULL, NULL, null, NULL, NULL, NULL, null, NULL, NULL, NULL, NULL, NULL),
+('Mace', 650, 650, 1, 4, '£', 'ItemImages/mace.jpg', 'physPow, ', 1, 15, NULL, NULL, NULL, NULL, NULL, null, NULL, NULL, NULL, null, NULL, NULL, NULL, NULL, NULL),
 ('Heavy Mace', 900, 1550, 2, 4, '£', 'ItemImages/heavy-mace.jpg', 'physPow, physPenFlat', 1, 25, NULL, NULL, NULL, 10, NULL, null, NULL, NULL, NULL, null, NULL, NULL, NULL, NULL, NULL),
 ("Warrior's Bane", 850, 1500, 2, 4, '£', 'ItemImages/warriors-bane.jpg', 'physPow, physPenPerc', 1, 20, NULL, NULL, 10, NULL, NULL, null, NULL, NULL, NULL, null, NULL, NULL, NULL, NULL, NULL),
 ("Titan's Bane", 1050, 2550, 3, 4, 'PASSIVE - Your first ability cast gains 20% Physical Penetration. This can only occur once every 10 seconds.', 'ItemImages/titans-bane.jpg', 'physPow, physPenPerc', 1, 40, NULL, NULL, 20, NULL, NULL, null, NULL, NULL, NULL, null, NULL, NULL, NULL, NULL, NULL),
@@ -157,14 +157,14 @@ INSERT INTO `items`(`itemName`, `itemIndividualPrice`, `itemTotalPrice`, `itemTi
 ("Heartseeker", 1700, 2900, 3, 5, "PASSIVE - Your abilities deal an additional 2% of the targets maximum Health as Physical Damage. If you have over 200 Physical Power, your ability bonus damage scales up. This effect reaches a maximum of 5% Maximum Health damage at 400 Physical Power. Subsequent hits on the same target do 75% bonus damage for the next 3s.", 'ItemImages/heartseeker.png', 'physPow, MP5, mana, physPenPerc, abilityProc', 1, 65, NULL, NULL, 10, NULL, NULL, null, NULL, NULL, NULL, null, NULL, NULL, 200, 20, NULL),
 ("Dominance", 1300, 2500, 3, 5, "PASSIVE - Your Basic Attacks benefit from an additional 10% Physical Penetration", 'ItemImages/dominance.jpg', 'physPow, MP5, mana, physPenPerc, ', 1, 55, NULL, NULL, 10, NULL, NULL, null, NULL, NULL, NULL, null, NULL, NULL, 200, 20, NULL),
 
-("Boots", 500, 500, 1, 6, "£", 'ItemImages/boots.jpg', 'mvSpd', 1, NULL, NULL, NULL, NULL, NULL, NULL, null, NULL, NULL, NULL, null, 6, NULL, NULL, NULL, NULL),
+("Boots", 500, 500, 1, 6, "£", 'ItemImages/boots.jpg', 'mvSpd, ', 1, NULL, NULL, NULL, NULL, NULL, NULL, null, NULL, NULL, NULL, null, 6, NULL, NULL, NULL, NULL),
 ("Combat Boots", 400, 900, 2, 6, "£", 'ItemImages/combat-boots.jpg', 'mvSpd, physPow,', 1, 10, NULL, NULL, NULL, NULL, NULL, null, NULL, NULL, NULL, null, 12, NULL, NULL, NULL, NULL),
 ("Warrior Tabi", 700, 1600, 3, 6, "£", 'ItemImages/warrior-tabi.jpg', 'mvSpd, physPow, mana', 1, 40, NULL, NULL, NULL, NULL, NULL, null, NULL, NULL, NULL, null, 18, NULL, 100, NULL, NULL),
 ("Ninja Tabi", 650, 1550, 3, 6, "£", 'ItemImages/ninja-tabi.jpg', 'mvSpd, physPow, mana, attSpd', 1, 20, 25, NULL, NULL, NULL, NULL, null, NULL, NULL, NULL, null, 18, NULL, 100, NULL, NULL),
 ("Reinforced Greaves", 650, 1550, 3, 6, "PASSIVE - Every time you are damaged by a god you gain a stack that provides 3 Physical and Magical Protections. Stacks up to 7 times, Lasts 6s", 'ItemImages/reinforced-greaves.jpg', 'mvSpd, physPow, hlth ccr, physProt, magProt, stack', 1, 10, NULL, NULL, NULL, NULL, NULL, null, NULL, 150, NULL, 20, 18, NULL, NULL, NULL, NULL),
 ("Talaria Boots", 700, 1600, 3, 6, "PASSIVE - You gain +20% additional Movement Speed after leaving the Fountain. This effect lasts 7s.", 'ItemImages/talaria-boots.jpg', 'Movement Speed, physPow, MP5', 1, 15, NULL, NULL, NULL, NULL, NULL, null, NULL, NULL, NULL, null, 22, NULL, NULL, 15, NULL),
 
-("Shoes", 500, 500, 1, 7, "£", 'ItemImages/shoes.jpg', 'Movement Speed', 2, NULL, NULL, NULL, NULL, NULL, NULL, null, NULL, NULL, NULL, null, 6, NULL, NULL, NULL, NULL),
+("Shoes", 500, 500, 1, 7, "£", 'ItemImages/shoes.jpg', 'Movement Speed, ', 2, NULL, NULL, NULL, NULL, NULL, NULL, null, NULL, NULL, NULL, null, 6, NULL, NULL, NULL, NULL),
 ("Magic Shoes", 400, 900, 2, 7, "£", 'ItemImages/magic-shoes.jpg', 'Movement Speed, magPow', 2, 20, NULL, NULL, NULL, NULL, NULL, null, NULL, NULL, NULL, null, 12, NULL, NULL, NULL, NULL),
 ("Shoes of the Magi", 650, 1550, 3, 7, "£", 'ItemImages/shoes-of-the-magi.jpg', 'Movement Speed, magPow, mana, magLs, ', 2, 75, NULL, 8, NULL, NULL, NULL, null, NULL, NULL, NULL, null, 18, NULL, 100, NULL, NULL),
 ("Shoes of Focus", 700, 1600, 3, 7, "£", 'ItemImages/shoes-of-focus.jpg', 'Movement Speed, magPow, mana, cdr', 2, 55, NULL, NULL, NULL, NULL, NULL, null, NULL, NULL, NULL, null, 18, 10, 250, NULL, NULL),
@@ -231,23 +231,9 @@ INSERT INTO `items`(`itemName`, `itemIndividualPrice`, `itemTotalPrice`, `itemTi
 
 
 
-("", , , 3, , "£", 'ItemImages/', '', 1, NULL, NULL, NULL, NULL, NULL, NULL, null, NULL, NULL, NULL, null, NULL, NULL, NULL, NULL, NULL),
-("", , , 3, , "£", 'ItemImages/', '', 1, NULL, NULL, NULL, NULL, NULL, NULL, null, NULL, NULL, NULL, null, NULL, NULL, NULL, NULL, NULL),
-("", , , 3, , "£", 'ItemImages/', '', 1, NULL, NULL, NULL, NULL, NULL, NULL, null, NULL, NULL, NULL, null, NULL, NULL, NULL, NULL, NULL),
-("", , , 3, , "£", 'ItemImages/', '', 1, NULL, NULL, NULL, NULL, NULL, NULL, null, NULL, NULL, NULL, null, NULL, NULL, NULL, NULL, NULL),
-("", , , 3, , "£", 'ItemImages/', '', 1, NULL, NULL, NULL, NULL, NULL, NULL, null, NULL, NULL, NULL, null, NULL, NULL, NULL, NULL, NULL),
-("", , , 3, , "£", 'ItemImages/', '', 1, NULL, NULL, NULL, NULL, NULL, NULL, null, NULL, NULL, NULL, null, NULL, NULL, NULL, NULL, NULL),
-("", , , 3, , "£", 'ItemImages/', '', 1, NULL, NULL, NULL, NULL, NULL, NULL, null, NULL, NULL, NULL, null, NULL, NULL, NULL, NULL, NULL),
-("", , , 3, , "£", 'ItemImages/', '', 1, NULL, NULL, NULL, NULL, NULL, NULL, null, NULL, NULL, NULL, null, NULL, NULL, NULL, NULL, NULL),
-("", , , 3, , "£", 'ItemImages/', '', 1, NULL, NULL, NULL, NULL, NULL, NULL, null, NULL, NULL, NULL, null, NULL, NULL, NULL, NULL, NULL),
-("", , , 3, , "£", 'ItemImages/', '', 1, NULL, NULL, NULL, NULL, NULL, NULL, null, NULL, NULL, NULL, null, NULL, NULL, NULL, NULL, NULL),
-("", , , 3, , "£", 'ItemImages/', '', 1, NULL, NULL, NULL, NULL, NULL, NULL, null, NULL, NULL, NULL, null, NULL, NULL, NULL, NULL, NULL),
-("", , , 3, , "£", 'ItemImages/', '', 1, NULL, NULL, NULL, NULL, NULL, NULL, null, NULL, NULL, NULL, null, NULL, NULL, NULL, NULL, NULL),
-("", , , 3, , "£", 'ItemImages/', '', 1, NULL, NULL, NULL, NULL, NULL, NULL, null, NULL, NULL, NULL, null, NULL, NULL, NULL, NULL, NULL),
-("", , , 3, , "£", 'ItemImages/', '', 1, NULL, NULL, NULL, NULL, NULL, NULL, null, NULL, NULL, NULL, null, NULL, NULL, NULL, NULL, NULL),
-("", , , 3, , "£", 'ItemImages/', '', 1, NULL, NULL, NULL, NULL, NULL, NULL, null, NULL, NULL, NULL, null, NULL, NULL, NULL, NULL, NULL),
-("", , , 3, , "£", 'ItemImages/', '', 1, NULL, NULL, NULL, NULL, NULL, NULL, null, NULL, NULL, NULL, null, NULL, NULL, NULL, NULL, NULL),
-("", , , 3, , "£", 'ItemImages/', '', 1, NULL, NULL, NULL, NULL, NULL, NULL, null, NULL, NULL, NULL, null, NULL, NULL, NULL, NULL, NULL),
+
+
+
 ("", , , 3, , "£", 'ItemImages/', '', 1, NULL, NULL, NULL, NULL, NULL, NULL, null, NULL, NULL, NULL, null, NULL, NULL, NULL, NULL, NULL),
 ("", , , 3, , "£", 'ItemImages/', '', 1, NULL, NULL, NULL, NULL, NULL, NULL, null, NULL, NULL, NULL, null, NULL, NULL, NULL, NULL, NULL),
 ("", , , 3, , "£", 'ItemImages/', '', 1, NULL, NULL, NULL, NULL, NULL, NULL, null, NULL, NULL, NULL, null, NULL, NULL, NULL, NULL, NULL),
