@@ -7,7 +7,7 @@ CREATE TABLE items (
     itemTotalPrice INT(11) NOT NULL,
     itemTier INT(3) NOT NULL,
     itemTree INT(11) NOT NULL,
-    itemPassive VARCHAR(255) NOT NULL,
+    itemPassive VARCHAR(511) NOT NULL,
     itemImage VARCHAR(255) NOT NULL, 
     itemKeywords VARCHAR(255) NOT NULL,
     itemPowerType INT(1) NOT NULL,
