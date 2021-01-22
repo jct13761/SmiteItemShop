@@ -228,32 +228,30 @@ INSERT INTO `items`(`itemName`, `itemIndividualPrice`, `itemTotalPrice`, `itemTi
 ("Spirit Robe", 1000, 2500, 3, 14, "PASSIVE - You gain an additional 15% Damage Mitigation for 3s whenever you are hit with a hard Crowd Control Effect. This can only occur once every 15 seconds.", 'ItemImages/spirit-robe.jpg', 'physProt, magProt, cdr, ccr, dmgPercRed ', 0, NULL, NULL, NULL, NULL, NULL, NULL, 40, 40, NULL, NULL, 20, NULL, 10, NULL, NULL, NULL),
 ("Mantle of Discord", 1400, 2900, 3, 14, "PASSIVE - If you take damage below 30% health you unleash a shockwave that stuns all enemies within a range of 20 units for 1s and become immune to Crowd Control for 1s. This effect cannot trigger more than once every 90s.", 'ItemImages/mantle-of-discord.jpg', 'physProt, magProt, cdr, ', 0, NULL, NULL, NULL, NULL, NULL, NULL, 60, 60, NULL, NULL, null, NULL, 10, NULL, NULL, NULL),
 
+("Talisman", 650, 650, 1, 15, "£", 'ItemImages/talisman.jpg', 'hlth, magProt, ', 0, NULL, NULL, NULL, NULL, NULL, NULL, null, 15, 75, NULL, null, NULL, NULL, NULL, NULL, NULL),
+("Silver Talisman", 600, 1250, 2, 15, "£", 'ItemImages/silver-talisman.jpg', 'hlth, magProt, ', 0, NULL, NULL, NULL, NULL, NULL, NULL, null, 45, 125, NULL, null, NULL, NULL, NULL, NULL, NULL),
+("Bulwark of Hope", 1050, 2300, 3, 15, "PASSIVE - When you take damage and are below 40% Health, you gain a Shield with health equal to 150 +10 Per Player Level for 20s. Can only occur once every 60s.", 'ItemImages/bulwark-of-hope.jpg', 'hlth, magProt, ccr, shld, ', 0, NULL, NULL, NULL, NULL, NULL, NULL, null, 60, 250, NULL, 20, NULL, NULL, NULL, NULL, NULL),
+("Pestilence", 1000, 2250, 3, 15, "AURA - Enemy gods within 55 units have their healing reduced by 25%. This does not stack with similar Auras.", 'ItemImages/pestilence.jpg', 'hlth, magProt, aura, antiHeal, ', 0, NULL, NULL, NULL, NULL, NULL, NULL, null, 80, 250, NULL, null, NULL, NULL, NULL, NULL, NULL),
+("Heartward Amulet", 850, 2100, 3, 15, "AURA - Allied gods within 70 units have their Magical Protections increased by 20 and their MP5 increased by 30.", 'ItemImages/heartward-amulet.jpg', 'hlth, magProt, aura, mp5, ', 0, NULL, NULL, NULL, NULL, NULL, NULL, null, 55, 250, NULL, null, NULL, NULL, NULL, NULL, NULL),
+("Talisman of Energy", 900, 2150, 3, 15, "PASSIVE - Getting a kill or assist on enemies causes you and allies within 70 units to gain stacks of energy. Energy stacks provide 2% Movement Speed, 2% Attack Speed, and 10MP5 per stack. Lasts 10s and stacks up to 6 times.", 'ItemImages/talisman-of-energy.jpg', 'hlth, magProt, stack, mvSpd, attSpd, mp5, ', 0, NULL, NULL, NULL, NULL, NULL, NULL, null, 60, 300, NULL, null, NULL, NULL, NULL, NULL, NULL),
+
+("Emerald Ring", 600, 600, 1, 16, "£", 'ItemImages/emerald-ring.jpg', 'magPow, ', 2, 25, NULL, NULL, NULL, NULL, NULL, null, NULL, NULL, NULL, null, NULL, NULL, NULL, NULL, NULL),
+("Enchanted Ring", 700, 1300, 2, 16, "£", 'ItemImages/enchanted-ring.jpg', 'magPow, attSpd, ', 2, 55, 10, NULL, NULL, NULL, NULL, null, NULL, NULL, NULL, null, NULL, NULL, NULL, NULL, NULL),
+("Demonic Grip", 1000, 2300, 3, 16, "PASSIVE - Your Basic Attacks reduce your target's Magical Protection by 10% for 3s (max 3 Stacks).", 'ItemImages/demonic-grip.jpg', 'magPow, attSpd, magPenPerc, stack, ', 2, 75, 30, NULL, NULL, NULL, NULL, null, NULL, NULL, NULL, null, NULL, NULL, NULL, NULL, NULL),
+("Telkhines Ring", 1400, 2700, 3, 16, "PASSIVE - Your Basic Attacks deal bonus damage of 10 + 15% of your Magical Power. This effect does not hit structures.", 'ItemImages/telkhines-ring.png', 'magPow, attSpd, dmgPercInc, ', 2, 100, 25, NULL, NULL, NULL, NULL, null, NULL, NULL, NULL, null, NULL, NULL, NULL, NULL, NULL),
+("Hastened Ring", 1400, 2700, 3, 16, "PASSIVE - Hitting an enemy God with a Basic Attack grants Haste for 6s, causing you to be immune from Basic Attack Movement Penalty. (Internal Cooldown 25s)", 'ItemImages/hastened-ring.png', 'magPow, attSpd, mvSpd, ', 2, 55, 10, NULL, NULL, NULL, NULL, null, NULL, NULL, NULL, null, 7, NULL, NULL, NULL, NULL),
+("Ring of Hecate", 1300, 2600, 3, 16, "PASSIVE - Each successful basic attack applies a hex to enemies and empowers you, increasing your power by 5% and reducing the power of your opponent by 5% for 5s. (Max. 3 Stacks).", 'ItemImages/ring-of-hecate.png', 'magPow, attSpd, dmgPercInc, magLs, stack, ', 2, 80, 25, 15, NULL, NULL, NULL, null, NULL, NULL, NULL, null, NULL, NULL, NULL, NULL, NULL),
+
+("Magic Focus", 650, 650, 1, 17, "£", 'ItemImages/magic-focus.jpg', 'magPow, ', 2, 25, NULL, NULL, NULL, NULL, NULL, null, NULL, NULL, NULL, null, NULL, NULL, NULL, NULL, NULL),
+("Spell Focus", 850, 1500, 2, 17, "£", 'ItemImages/spell-focus.jpg', 'magPow, magPenPerc, ', 2, 45, NULL, NULL, 10, NULL, NULL, null, NULL, NULL, NULL, null, NULL, NULL, NULL, NULL, NULL),
+("Enchanted Spear", 750, 1400, 2, 17, "£", 'ItemImages/enchanted-spear.jpg', 'magPow, magPenFlat, ', 2, 30, NULL, NULL, NULL, 10, NULL, null, NULL, NULL, NULL, null, NULL, NULL, NULL, NULL, NULL),
+("Divine Ruin", 900, 2300, 3, 17, "PASSIVE - Enemies hit by your abilities have 40% reduced healing for 8 seconds.", 'ItemImages/divine-ruin.jpg', 'magPow, magPenFlat, antiHeal, ', 2, 90, NULL, NULL, NULL, 10, NULL, null, NULL, NULL, NULL, null, NULL, NULL, NULL, NULL, NULL),
+("Spear of Desolation", 1200, 2600, 3, 17, "PASSIVE - If you receive a kill or assist on an Enemy God all of your cooldowns are reduced by 2 seconds.", 'ItemImages/spear-of-desolation.jpg', 'magPow, magPenFlat, cdr, ', 2, 110, NULL, NULL, NULL, 10, NULL, null, NULL, NULL, NULL, null, NULL, 10, NULL, NULL, NULL),
+("Obsidian Shard", 1050, 2550, 3, 17, "PASSIVE - Your first ability cast gains 10% Magical Penetration. This can only occur once every 10 seconds.", 'ItemImages/obsidian-shard.jpg', 'magPow, magPenPerc, ', 2, 70, NULL, NULL, 20, NULL, NULL, null, NULL, NULL, NULL, null, NULL, NULL, NULL, NULL, NULL),
+("Spear of the Magus", 1150, 2550, 3, 17, "PASSIVE - Whenever you damage an enemy god with an ability you mark them to take 7.5% increased damage from all sources. This effect lasts for 7s and can only occur once every 15s.", 'ItemImages/spear-of-the-magus.jpg', 'magPow, magPenFlat, dmgPercInc, ', 2, 110, NULL, NULL, NULL, 10, NULL, null, NULL, NULL, NULL, null, NULL, NULL, NULL, NULL, NULL),
 
 
 
-
-
-
-("", , , 3, , "£", 'ItemImages/', '', 1, NULL, NULL, NULL, NULL, NULL, NULL, null, NULL, NULL, NULL, null, NULL, NULL, NULL, NULL, NULL),
-("", , , 3, , "£", 'ItemImages/', '', 1, NULL, NULL, NULL, NULL, NULL, NULL, null, NULL, NULL, NULL, null, NULL, NULL, NULL, NULL, NULL),
-("", , , 3, , "£", 'ItemImages/', '', 1, NULL, NULL, NULL, NULL, NULL, NULL, null, NULL, NULL, NULL, null, NULL, NULL, NULL, NULL, NULL),
-("", , , 3, , "£", 'ItemImages/', '', 1, NULL, NULL, NULL, NULL, NULL, NULL, null, NULL, NULL, NULL, null, NULL, NULL, NULL, NULL, NULL),
-("", , , 3, , "£", 'ItemImages/', '', 1, NULL, NULL, NULL, NULL, NULL, NULL, null, NULL, NULL, NULL, null, NULL, NULL, NULL, NULL, NULL),
-("", , , 3, , "£", 'ItemImages/', '', 1, NULL, NULL, NULL, NULL, NULL, NULL, null, NULL, NULL, NULL, null, NULL, NULL, NULL, NULL, NULL),
-("", , , 3, , "£", 'ItemImages/', '', 1, NULL, NULL, NULL, NULL, NULL, NULL, null, NULL, NULL, NULL, null, NULL, NULL, NULL, NULL, NULL),
-("", , , 3, , "£", 'ItemImages/', '', 1, NULL, NULL, NULL, NULL, NULL, NULL, null, NULL, NULL, NULL, null, NULL, NULL, NULL, NULL, NULL),
-("", , , 3, , "£", 'ItemImages/', '', 1, NULL, NULL, NULL, NULL, NULL, NULL, null, NULL, NULL, NULL, null, NULL, NULL, NULL, NULL, NULL),
-("", , , 3, , "£", 'ItemImages/', '', 1, NULL, NULL, NULL, NULL, NULL, NULL, null, NULL, NULL, NULL, null, NULL, NULL, NULL, NULL, NULL),
-("", , , 3, , "£", 'ItemImages/', '', 1, NULL, NULL, NULL, NULL, NULL, NULL, null, NULL, NULL, NULL, null, NULL, NULL, NULL, NULL, NULL),
-("", , , 3, , "£", 'ItemImages/', '', 1, NULL, NULL, NULL, NULL, NULL, NULL, null, NULL, NULL, NULL, null, NULL, NULL, NULL, NULL, NULL),
-("", , , 3, , "£", 'ItemImages/', '', 1, NULL, NULL, NULL, NULL, NULL, NULL, null, NULL, NULL, NULL, null, NULL, NULL, NULL, NULL, NULL),
-("", , , 3, , "£", 'ItemImages/', '', 1, NULL, NULL, NULL, NULL, NULL, NULL, null, NULL, NULL, NULL, null, NULL, NULL, NULL, NULL, NULL),
-("", , , 3, , "£", 'ItemImages/', '', 1, NULL, NULL, NULL, NULL, NULL, NULL, null, NULL, NULL, NULL, null, NULL, NULL, NULL, NULL, NULL),
-("", , , 3, , "£", 'ItemImages/', '', 1, NULL, NULL, NULL, NULL, NULL, NULL, null, NULL, NULL, NULL, null, NULL, NULL, NULL, NULL, NULL),
-("", , , 3, , "£", 'ItemImages/', '', 1, NULL, NULL, NULL, NULL, NULL, NULL, null, NULL, NULL, NULL, null, NULL, NULL, NULL, NULL, NULL),
-("", , , 3, , "£", 'ItemImages/', '', 1, NULL, NULL, NULL, NULL, NULL, NULL, null, NULL, NULL, NULL, null, NULL, NULL, NULL, NULL, NULL),
-("", , , 3, , "£", 'ItemImages/', '', 1, NULL, NULL, NULL, NULL, NULL, NULL, null, NULL, NULL, NULL, null, NULL, NULL, NULL, NULL, NULL),
-("", , , 3, , "£", 'ItemImages/', '', 1, NULL, NULL, NULL, NULL, NULL, NULL, null, NULL, NULL, NULL, null, NULL, NULL, NULL, NULL, NULL),
 ("", , , 3, , "£", 'ItemImages/', '', 1, NULL, NULL, NULL, NULL, NULL, NULL, null, NULL, NULL, NULL, null, NULL, NULL, NULL, NULL, NULL),
 ("", , , 3, , "£", 'ItemImages/', '', 1, NULL, NULL, NULL, NULL, NULL, NULL, null, NULL, NULL, NULL, null, NULL, NULL, NULL, NULL, NULL),
 ("", , , 3, , "£", 'ItemImages/', '', 1, NULL, NULL, NULL, NULL, NULL, NULL, null, NULL, NULL, NULL, null, NULL, NULL, NULL, NULL, NULL),
