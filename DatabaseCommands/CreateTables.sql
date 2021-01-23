@@ -308,9 +308,6 @@ INSERT INTO `items`(`itemName`, `itemIndividualPrice`, `itemTotalPrice`, `itemTi
 ("Gauntlet of Thebes", 1100, 2350, 3, 24, "PASSIVE - Assists on a minion give 1 Stack and God kills and assists give 5 Stacks. Stacks provide 1 Physical and Magical Protection. At 50 Stacks this item evolves, providing an Aura of 10 Physical Protection and 10 Magical Protection.", 'ItemImages/gauntlet-of-thebes.jpg', 'hlth, hp5, physProt, magProt, aura, stack, ', 0, NULL, NULL, NULL, NULL, NULL, NULL, null, NULL, 300, 15, null, NULL, NULL, NULL, NULL, NULL),
 ("Evolved Gauntlet of Thebes", 0, 2350, 4, 24, "AURA - Allies within 70 units receive 10 Physical Protection and 10 Magical Protection.", 'ItemImages/evolved-gauntlet-of-thebes.jpg', 'hlth, hp5, physProt, magProt, aura, evolve, ', 0, NULL, NULL, NULL, NULL, NULL, NULL, 50, 50, 300, 15, null, NULL, NULL, NULL, NULL, NULL),
 
-
-
-
 ("Shuriken", 650, 650, 1, 25, "£", 'ItemImages/shuriken.jpg', 'physPow, attSpd, ', 1, 10, 5, NULL, NULL, NULL, NULL, null, NULL, NULL, NULL, null, NULL, NULL, NULL, NULL, NULL),
 ("8-Pointed Shuriken", 750, 1400, 2, 25, "£", 'ItemImages/8-pointed-shuriken.jpg', 'physPow, attSpd, ', 1, 25, 7, NULL, NULL, NULL, NULL, null, NULL, NULL, NULL, null, NULL, NULL, NULL, NULL, NULL),
 ("Wind Demon", 1100, 2500, 3, 25, "PASSIVE - Your Critical Hits provide you with 10% Physical Penetration and increase your Attack Speed and Movement Speed by 20% for 5s.", 'ItemImages/wind-demon.jpg', 'physPow, attSpd, crit, physPenPerc, mvSpd, ', 1, 25, 15, NULL, NULL, NULL, 25, null, NULL, NULL, NULL, null, NULL, NULL, NULL, NULL, NULL),
