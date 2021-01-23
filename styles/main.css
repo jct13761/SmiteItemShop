@@ -23,6 +23,11 @@ p {
 
 /* Input Group */
 
+.title {
+    color: burlywood;
+    /* text-decoration: underline; */
+    margin-bottom: 1em;
+}
 .input_group {
     margin-bottom: 50pt;
     color: white;
@@ -107,6 +112,9 @@ p {
     margin: 0pt;
     cursor: pointer;
     padding-bottom: 3em;
+}
+.homepage_content #item_box img {
+    border: 0.5px solid #49422b;
 }
 .homepage_content p {
     color: white;

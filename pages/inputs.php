@@ -1,3 +1,8 @@
+<div class="container title text-center">
+    <h1>Items</h1>
+</div>
+
+
 <div class="container input_group">
 
     <!-- Search bar and reset button -->

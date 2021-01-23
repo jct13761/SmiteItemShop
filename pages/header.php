@@ -7,13 +7,16 @@
 
     <ul class="nav navbar-nav">
         <li class="nav-item active">
-            <a class="nav-link" href="home.php">Home</a>
+            <a class="nav-link" href="construction.php">Home</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="Tests/test.html">Gods</a>
+            <a class="nav-link" href="home.php">Items</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="Tests/test.html">About</a>
+            <a class="nav-link" href="construction.php">Gods</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="construction.php">About</a>
         </li>
         <!-- <li class="nav-item">
                 <a class="nav-link disabled" href="#">Disabled</a>
