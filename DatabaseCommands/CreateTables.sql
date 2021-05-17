@@ -360,3 +360,414 @@ INSERT INTO `items`(`itemName`, `itemIndividualPrice`, `itemTotalPrice`, `itemTi
 
 
 ("", , , 3, , "£", 'ItemImages/', '', 1, NULL, NULL, NULL, NULL, NULL, NULL, null, NULL, NULL, NULL, null, NULL, NULL, NULL, NULL, NULL);
+
+
+
+
+/* New Starter Items */ 
+/* 
+
+Bluestone Pendant 800
+PASSIVE - Enemies hit by your damaging Abilities take an additional 25 Physical Damage over 2s. (Max 2 Stacks) Can be upgraded at level 20.
+
++15 PHYSICAL POWER
++20 HP5
++10 MP5
+
+
+Bluestone Brooch 1500
+PASSIVE - Enemies hit by your damaging abilities take an additional 75 (+7.5% of their Current Health) as Physical Damage over 2s. (Max 2 Stacks)
+
++45 PHYSICAL POWER
++200 HEALTH
++30 HP5
++30 MP5
+
+
+Corrupted Bluestone 1500
+PASSIVE - Enemies hit by your damaging Abilities take an additional 75 Physical Damage over 5s and have their Attack Speed reduced 10%. (Max 2 Stacks). For every enemy corrupted you gain 15% Attacks Speed up to a Maximum of 5 enemies.
+
++60 PHYSICAL POWER
++20 HP5
++20 MP5
+
+
+Death's Toll 650
+PASSIVE - Hitting an enemy with a Basic Attack restores 2 Health (+0.4% of your Maximum Health) and 1 Mana (+1% of your Maximum Mana). Basic Attacks that deal AoE damage restore half as much for each enemy hit after the first. Can be upgraded at level 20.
+
++15 PHYSICAL POWER
++25 MAGICAL POWER
++75 HEALTH
+
+
+Death's Embrace 1500
+PASSIVE - Hitting an enemy with a Basic Attack restores 2% of your Health and Mana. Basic Attacks that deal AoE damage restore half as much for each enemy hit after the first. Can be upgraded at level 20.
+
++65 PHYSICAL POWER
++110 MAGICAL POWER
++200 HEALTH
+
+
+Death's Temper 1500
+PASSIVE - When an enemy dies within 80 units of you gain 1 stack of Temper that provides 3.5% increased Basic Attack Damage for 10s. This can stack up to 10 times. If an enemy god dies near you immediately gain 5 stacks.
+
++50 PHYSICAL POWER
++75 MAGICAL POWER
++100 HEALTH
++30% ATTACK SPEED
+
+
+Gilded Arrow 700
+PASSIVE - Every 10s the highest health enemy minion or jungle monster within 80 units of you is marked. If you secure the killing blow on that target you gain 10 bonus gold and 20% attack speed for 8s, and restore 20 Mana. Can be upgraded at level 20.
+
++15 BASIC ATTACK DAMAGE
++50 HEALTH
++7 MP5
+
+
+Diamond Arrow 1500
+PASSIVE - When you kill an enemy you gain 10 gold and 20% Attack Speed for 8s. This can stack up to 3 times. If you kill an enemy god you gain 3 stacks and 30 gold immediately.
+
++80 BASIC ATTACK DAMAGE
++100 HEALTH
+
+
+Ornate Arrow 1500
+PASSIVE - All sources of gold gain are increased by 20%. For every 100 gold you have gain 1.25% Attack Speed and 1% Physical Critical Strike Chance, up to a maximum of 20 stacks.
+
++60 BASIC ATTACK DAMAGE
++150 HEALTH
++10% ATTACK SPEED
++5% PHYSICAL CRITICAL STRIKE CHANCE
+
+
+Warrior's Axe 600
+PASSIVE - Damaging an enemy god steals 25 health away from your target and restores 25 mana. This effect can only occur once every 10s. Can be upgraded at level 20.
+
++15 PHYSICAL PROTECTION
++10 MAGICAL PROTECTION
++75 HEALTH
+
+
+Sundering Axe 1500
+PASSIVE - Damaging an enemy god steals 5% (+2% of your Protection from items) of their Current Health away from your target and restores it to you. This effect can only occur once every 7s.
+
++30 PHYSICAL PROTECTION
++30 MAGICAL PROTECTION
++250 HEALTH
+
+
+Hero's Axe1500
+PASSIVE - When an ally god within 55 units of you is hit by a hard crowd control effect, give them a shield equal to 15% of your Maximum Health. This effect can only occur once every 8s.
+
++35 PHYSICAL PROTECTION
++35 MAGICAL PROTECTION
++300 HEALTH
++30% CROWD CONTROL REDUCTION
+
+
+Manikin Scepter 750
+PASSIVE - Enemies hit by your Basic Attacks are burned, taking 12 Physical Damage over 2s and have their Attack Speed reduced by 3.5%. Jungle Monsters take 4x the amount of damage and restore 15 Health and Mana when they die if they are burned. This effect can stack up to 4 times. Can be upgraded at level 20.
+
++10 BASIC ATTACK DAMAGE
++10 PHYSICAL PROTECTION
+
+
+Manikin Mace 1500
+PASSIVE - Enemies hit by your Basic Attacks are burned, taking 60 physical damage over 2s and have their Attack Speed slowed by 10%. Jungle Monsters and Bosses take 4x damage and restore 2.5% of your Health and Mana when they die if they are burned. This effect can stack up to 4 times.
+
++50 BASIC ATTACK DAMAGE
++100 HEALTH
++30 PHYSICAL PROTECTION
+
+
+Manikin Hidden Blade 1500
+PASSIVE - If you have not taken or dealt damage in the last 5s and hit an enemy god, Jungle Monster, or Jungle Boss, they immediately take 15% of their Current Health as Physical Damage and are slowed by 20% for 5s.
+
++75 BASIC ATTACK DAMAGE
++30 PHYSICAL PROTECTION
++5 DAMAGE REDUCTION
+
+
+Bumba's Dagger 600
+PASSIVE - Your Basic Attacks deal +20 True Damage and your Abilities deal +30% Damage versus Jungle Monsters. When a Jungle Monster is killed you are restored for 10% of the Monster's Health and 25 Mana. Can be upgraded at level 20.
+
++50 HEALTH
++50 MANA
+
+
+Bumba's Spear 1500
+PASSIVE - Your Basic Attacks deal +50 True Damage and your Abilities deal +50% damage against Jungle Camps, Structures, and Jungle Bosses. When any of these die you are healed for 10% of their Health, 10% of your Mana, and are given 10 gold.
+
++60 PHYSICAL POWER
++90 MAGICAL POWER
++200 HEALTH
++200 MANA
+
+
+Bumba's Hammer 1500
+PASSIVE - After casting an ability your next Basic Attack deals an additional 80 True Damage. After hitting a Basic Attack empowered by Bumba’s Hammer, your active cooldowns are reduced by 1s and you are healed for 5% of your Maximum Health.
+
++300 HEALTH
++200 MANA
++10% PENETRATION
++20% COOLDOWN REDUCTION
+
+
+Sands of Time 700
+PASSIVE - This item grants 2 MP5 per 10% of your missing Mana. Can be upgraded at level 20.
+
++30 MAGICAL POWER
++10 MP5
++10% COOLDOWN REDUCTION
+
+
+Pendulum of Ages 1500
+PASSIVE - This item grants 4 MP5 per 10% of your missing Mana. This item grants 10 Magical power per 10% of your available Mana.
+
++90 MAGICAL POWER
++20 MP5
++20% COOLDOWN REDUCTION
+
+
+The Alternate Timeline 1500
+PASSIVE - When you would die you instead find a timeline you are still alive, becoming CC Immune, Damage Immune, and unable to act. After 1.75s you are restored to 25% Health and Mana and can act again. This can only occur once every 6 minutes.
+
++45 MAGICAL POWER
++45 PHYSICAL PROTECTION
++45 MAGICAL PROTECTIONS
++10% COOLDOWN REDUCTION
+
+
+Vampiric Shroud 750
+PASSIVE - Damaging any enemy with an ability restores 4 health and 6 mana. Can only trigger once per target per ability. Can be upgraded at level 20.
+
++25 MAGICAL POWER
++10 PHYSICAL PROTECTION
++75 HEALTH
++5% MAGICAL LIFESTEAL
+
+
+Blood-soaked Shroud 1500
+PASSIVE - Damaging any enemy with an ability restores 12 Health, 6 Mana and provides a stack of 1% Magical Lifesteal for 6s. This can stack infinitely. Can only trigger once per target per ability.
+
++75 MAGICAL POWER
++40 PHYSICAL PROTECTION
++200 HEALTH
++15% MAGICAL LIFESTEAL
+
+
+Sacrificial Shroud 1500
+PASSIVE - Your abilities deal 15% more damage, but cost 5% of your Maximum Health. If the cost would kill you, you instead don't pay the cost.
+
++100 MAGICAL POWER
++20 PHYSICAL PROTECTION
++100 HEALTH
++15% MAGICAL LIFESTEAL
+
+
+War Flag 600
+PASSIVE - Getting an assist for a minion or jungle monster dying restores 6 Health and 6 Mana to all allies within 55 units of you and provides allies 1% Movement Speed and 2% Attack Speed for 10s. This effect stacks up to 10 times. Can be upgraded at level 17.
+
++10 PHYSICAL POWER
++20 MAGICAL POWER
++100 HEALTH
++10 MP5
+
+
+War Banner 1500
+PASSIVE - Getting an assist for a minion or jungle monster dying restores 1% Health and 1% Mana to all allies within 55 units of you and provides allies 2% Movement Speed and 4% Attack Speed for 10s. This effect stacks up to 10 times.
+
++30 PHYSICAL POWER
++60 MAGICAL POWER
++300 HEALTH
++15 MP5
+
+
+Spartan Flag 1500
+PASSIVE - When you damage an enemy god you call down a Spartan Flag at your location, providing 10% increased Power to allies standing in the radius. Lasts for 10s, can only occur once every 10s.
+
++40 PHYSICAL POWER
++65 MAGICAL POWER
++300 HEALTH
++15 MP5
+
+
+Sentinel's Gift 600
+PASSIVE - Getting the assist for an enemy minion or jungle monster dying will provide 7 Bonus gold and restore 12 Health and 8 Mana. If you are not within 30 units of an allied god for 20 seconds this passive is disabled until you are near an allied god again. Can be upgraded at level 17.
+
++7 PHYSICAL PROTECTION
++7 MAGICAL PROTECTION
++75 HEALTH
++7 MP5
+
+
+Sentinel's Boon 1500
+PASSIVE - Getting the assist when an enemy dies provides 15 Bonus Gold and restores 3% of your Health and Mana.
+
++45 PHYSICAL PROTECTION
++45 MAGICAL PROTECTION
++300 HEALTH
++20 MP5
+
+
+Sentinel's Embrace 1500
+AURA - Evenly split 80 Physical and Magical Protection among all allied gods within 55 units and yourself. If you are alone you only gain 40 Physical and Magical Protections.
+
++30 PHYSICAL PROTECTION
++30 MAGICAL PROTECTION
++200 HEALTH
++20 MP5
+
+
+Benevolence 600
+PASSIVE - You gain +3 GP5 (+0.5 per level) and +1 XpP5 (+0.5 per level). Any time you would gain experience or gold from slain enemies you only gain 90% of the reward. If an allied god is within 40 units of you give the lost 10% to that ally. Can be upgraded at level 17.
+
++100 HEALTH
++10 MP5
++7 HP5
+
+
+Compassion 1500
+AURA - Damage taken by allied gods within 70 units of you is reduced by 15%, up to a maximum of 100 damage. The reduced damage is redirected to you as Magical Damage. If you would die from this damage it does not get reduced or redirected.
+
++60 MAGICAL PROTECTION
++300 HEALTH
++45 HP5
++15 MP5
+
+
+Animosity 1500
+PASSIVE - Your Basic Attacks deal bonus damage equal to 4% of your Maximum Health as Magical Damage to enemies and structures.
+
++400 HEALTH
++20 HP5
++20 MP5
+
+
+Tainted Steel 700
+PASSIVE - Enemy gods that you hit have their healing taken reduced by 20% for 6s. Can be upgraded at level 20.
+
++15 PHYSICAL POWER
++25 MAGICAL POWER
++15 PHYSICAL PROTECTION
++15 MAGICAL PROTECTION
+
+
+Tainted Amulet 1500
+PASSIVE - Enemy Gods that you hit have their healing taken reduced by 20% for 6s. You are healed for 100% of the healing reduced.
+
++30 PHYSICAL POWER
++50 MAGICAL POWER
++30 PHYSICAL PROTECTION
++80 MAGICAL PROTECTION
+
+
+Tainted Breastplate 1500
+PASSIVE - Enemy gods that you hit have their healing taken reduced by 50% for 8s.
+
++40 PHYSICAL POWER
++60 MAGICAL POWER
++70 PHYSICAL PROTECTION
++30 MAGICAL PROTECTION
+
+
+Leather Cowl 700
+PASSIVE - While you are within 66 units of an allied god you gain 10% Attack Speed. If you are alone you instead gain 5% Movement Speed. Can be upgraded at level 20.
+
++15 PHYSICAL POWER
++10% PHYSICAL LIFESTEAL
++5% ATTACK SPEED
+
+
+Hunter's Cowl 1500
+AURA - While you are within 55 units of an allied god you gain 25% Attack Speed Aura. If you are alone you instead gain 10% Movement Speed.
+
++60 PHYSICAL POWER
++15% PHYSICAL LIFESTEAL
++20% ATTACK SPEED
+
+
+Leader's Cowl 1500
+AURA - You provide 5% increased Power to all nearby allied gods. This aura gains a bonus stack for each ally god within 55 units causing it to provide an additional 3% increased Power. For each enemy god within 55 units a stack is removed.
+
++40 PHYSICAL POWER
++300 HEALTH
++15% ATTACK SPEED
++15% PHYSICAL LIFESTEAL
+
+
+Conduit Gem 700
+PASSIVE - Every second you gain a stack of Arcane Energy, causing your next damaging ability to deal an additional 2 True Damage and remove all stacks. This effect stacks up to 20 times. Can be upgraded at level 20.
+
++25 MAGICAL POWER
++10 MP5
+
+
+Archmage's Gem 1500
+PASSIVE - Every 1s you gain a stack of Demise, causing your next damaging ability to deal an additional 1.5% of your Magical Power in damage and remove all stacks. This effect stacks up to 20 times.
+
++120 MAGICAL POWER
++25 MP5
+
+
+Gem of Focus 1500
+PASSIVE - Every time you cast an ability that costs mana you gain a stack of Focus for 10s, providing 3% Movement Speed, 3% Damage Increase, and 2% Damage Taken Reduction, stacking up to 3 times.
+
++90 MAGICAL POWER
++150 HEALTH
++15 MP5
+
+
+Eye of the Jungle 650
+PASSIVE - You deal 30% increased damage to Jungle Monsters. Upon defeating a Large Jungle Monster you place a ward at its location that lasts for 30 seconds. While in the jungle you gain +15 HP5 and +10 MP5 Can be upgraded at level 20.
+
++10 PHYSICAL POWER
++25 MAGICAL POWER
++10 HP5
++10% ATTACK SPEED
+
+
+Seer of the Jungle 1500
+PASSIVE - You deal 30% increased damage to Jungle Monsters and Jungle Bosses. Upon defeating a Large Jungle Monster or Jungle Boss, you gain the ability to see wards for 10s.
+
++60 PHYSICAL POWER
++90 MAGICAL POWER
++25 PHYSICAL PROTECTION
++15% ATTACK SPEED
+
+
+
+Protector of the Jungle 1500
+PASSIVE - While in the jungle you gain 12% Power and 12% Protections.
+
++55 PHYSICAL POWER
++80 MAGICAL POWER
++35 PHYSICAL PROTECTION
++25% ATTACK SPEED
+
+
+Warding Sigil 700
+PASSIVE - When you are hit by an ability you gain a stack of Dampening, decreasing damage taken by 5 for 5s. This occurs only once per ability cast. This can stack twice. Can be upgraded at level 20.
+
++10 PHYSICAL PROTECTION
++15 MAGICAL PROTECTION
++75 HEALTH
+
+
+Sigil of The Old Guard 1500
+PASSIVE - Whenever you are hit by an ability you gain a stack of Rebuke, decreasing damage taken by 4% for 5s. This occurs only once per ability cast. This can stack three times.
+
++200 HEALTH
++75 MAGICAL PROTECTION
++30 PHYSICAL PROTECTION
+
+
+Infused Sigil 1500
+PASSIVE - When you are hit by an ability the Infused Sigil gains a stack. This can occur only once per ability cast. At 4 stacks it explodes after 0.5s, dealing 500 Magical Damage to enemies within 30 units of you.
+
++350 HEALTH
++25 MAGICAL PROTECTION
++25 PHYSICAL PROTECTION
+
+*/
