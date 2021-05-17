@@ -442,7 +442,7 @@ PASSIVE - All sources of gold gain are increased by 20%. For every 100 gold you 
 
 
 Warrior's Axe 600
-PASSIVE - Damaging an enemy god steals 25 health away from your target and restores 25 mana. This effect can only occur once every 10s. Can be upgraded at level 20.
+PASSIVE - Damaging an enemy god steals 30 health away from your target and restores 25 mana. This effect can only occur once every 8s. Can be upgraded at level 20.
 
 +15 PHYSICAL PROTECTION
 +10 MAGICAL PROTECTION
@@ -482,9 +482,10 @@ PASSIVE - Enemies hit by your Basic Attacks are burned, taking 60 physical damag
 
 
 Manikin Hidden Blade 1500
-PASSIVE - If you have not taken or dealt damage in the last 5s and hit an enemy god, Jungle Monster, or Jungle Boss, they immediately take 15% of their Current Health as Physical Damage and are slowed by 20% for 5s.
+PASSIVE - If you have not taken or dealt damage in the last 5s and hit an enemy god, Jungle Monster, or Jungle Boss, they immediately take 20% of their Current Health as Physical Damage and are slowed by 20% for 5s.
 
-+75 BASIC ATTACK DAMAGE
++60 PHYSICAL POWER
++90 MAGICAL POWER
 +30 PHYSICAL PROTECTION
 +5 DAMAGE REDUCTION
 
@@ -497,12 +498,12 @@ PASSIVE - Your Basic Attacks deal +20 True Damage and your Abilities deal +30% D
 
 
 Bumba's Spear 1500
-PASSIVE - Your Basic Attacks deal +50 True Damage and your Abilities deal +50% damage against Jungle Camps, Structures, and Jungle Bosses. When any of these die you are healed for 10% of their Health, 10% of your Mana, and are given 10 gold.
+PASSIVE - Your Basic Attacks deal +50 True Damage and your Abilities deal +50% damage against Jungle Camps, Structures, and Jungle Bosses. When any of these die you are healed for 10% of their Health 10% of your Mana, and a 10% power Buff for 10s.
 
 +60 PHYSICAL POWER
 +90 MAGICAL POWER
 +200 HEALTH
-+200 MANA
++10% COOLDOWN REDUCTION
 
 
 Bumba's Hammer 1500
@@ -510,8 +511,7 @@ PASSIVE - After casting an ability your next Basic Attack deals an additional 80
 
 +300 HEALTH
 +200 MANA
-+10% PENETRATION
-+20% COOLDOWN REDUCTION
++10% COOLDOWN REDUCTION
 
 
 Sands of Time 700
@@ -603,7 +603,7 @@ PASSIVE - Getting the assist for an enemy minion or jungle monster dying will pr
 
 
 Sentinel's Boon 1500
-PASSIVE - Getting the assist when an enemy dies provides 15 Bonus Gold and restores 3% of your Health and Mana.
+PASSIVE - Getting the assist when an enemy dies provides 15 Bonus Gold and restores 4% of your Health and Mana.
 
 +45 PHYSICAL PROTECTION
 +45 MAGICAL PROTECTION
@@ -621,7 +621,7 @@ AURA - Evenly split 80 Physical and Magical Protection among all allied gods wit
 
 
 Benevolence 600
-PASSIVE - You gain +3 GP5 (+0.5 per level) and +1 XpP5 (+0.5 per level). Any time you would gain experience or gold from slain enemies you only gain 90% of the reward. If an allied god is within 40 units of you give the lost 10% to that ally. Can be upgraded at level 17.
+PASSIVE - You gain +3 GP5 (+0.5 per level) and +1 XpP5 (+0.5 per level). Any time you would gain experience or gold from slain enemies you only gain 90% of the reward. If an allied god is within 40 units of you give the lost 10% to only one ally. Can be upgraded at level 17.
 
 +100 HEALTH
 +10 MP5
@@ -629,7 +629,7 @@ PASSIVE - You gain +3 GP5 (+0.5 per level) and +1 XpP5 (+0.5 per level). Any tim
 
 
 Compassion 1500
-AURA - Damage taken by allied gods within 70 units of you is reduced by 15%, up to a maximum of 100 damage. The reduced damage is redirected to you as Magical Damage. If you would die from this damage it does not get reduced or redirected.
+AURA - You gain +8 GP5. Damage taken by allied gods within 70 units of you is reduced by 15%, up to a maximum of 100 damage. The reduced damage is redirected to you as Magical Damage. If you would die from this damage it does not get reduced or redirected.
 
 +60 MAGICAL PROTECTION
 +300 HEALTH
@@ -638,7 +638,7 @@ AURA - Damage taken by allied gods within 70 units of you is reduced by 15%, up 
 
 
 Animosity 1500
-PASSIVE - Your Basic Attacks deal bonus damage equal to 4% of your Maximum Health as Magical Damage to enemies and structures.
+PASSIVE - Your Basic Attacks deal bonus damage equal to 4% of your Maximum Health as Magical Damage to enemies.
 
 +400 HEALTH
 +20 HP5
@@ -708,13 +708,14 @@ Archmage's Gem 1500
 PASSIVE - Every 1s you gain a stack of Demise, causing your next damaging ability to deal an additional 1.5% of your Magical Power in damage and remove all stacks. This effect stacks up to 20 times.
 
 +120 MAGICAL POWER
++200 MANA
 +25 MP5
 
 
 Gem of Focus 1500
 PASSIVE - Every time you cast an ability that costs mana you gain a stack of Focus for 10s, providing 3% Movement Speed, 3% Damage Increase, and 2% Damage Taken Reduction, stacking up to 3 times.
 
-+90 MAGICAL POWER
++100 MAGICAL POWER
 +150 HEALTH
 +15 MP5
 
@@ -729,12 +730,12 @@ PASSIVE - You deal 30% increased damage to Jungle Monsters. Upon defeating a Lar
 
 
 Seer of the Jungle 1500
-PASSIVE - You deal 30% increased damage to Jungle Monsters and Jungle Bosses. Upon defeating a Large Jungle Monster or Jungle Boss, you gain the ability to see wards for 10s.
+PASSIVE - You deal 30% increased damage to Jungle Monsters and Jungle Bosses. Upon defeating a Large Jungle Monster or Jungle Boss, you gain the ability to see wards for 15s.
 
 +60 PHYSICAL POWER
 +90 MAGICAL POWER
 +25 PHYSICAL PROTECTION
-+15% ATTACK SPEED
++30% ATTACK SPEED
 
 
 
@@ -750,7 +751,7 @@ PASSIVE - While in the jungle you gain 12% Power and 12% Protections.
 Warding Sigil 700
 PASSIVE - When you are hit by an ability you gain a stack of Dampening, decreasing damage taken by 5 for 5s. This occurs only once per ability cast. This can stack twice. Can be upgraded at level 20.
 
-+10 PHYSICAL PROTECTION
++15 PHYSICAL PROTECTION
 +15 MAGICAL PROTECTION
 +75 HEALTH
 
